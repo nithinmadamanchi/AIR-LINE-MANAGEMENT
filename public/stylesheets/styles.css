@@ -1,0 +1,501 @@
+
+
+body {
+  background-color: white;
+  overflow-x: hidden !important;
+  font-family: "Karla", sans-serif; 
+}
+
+.plane {
+  margin: 0 10px;
+}
+
+.progress {
+  height: 20px; 
+  width: 13rem;
+}
+
+
+
+
+/******* Navbar *******/
+.bg-red {
+  background-color: red;
+}
+
+
+nav {
+  min-height: 5rem;
+  padding: 0 2.5rem 0 1rem;
+}
+
+.nav-ul {
+  position: relative; 
+}
+
+.nav-list i {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-list {
+  margin: 0 1rem;
+}
+
+.nav-list a:hover {
+  color: black !important;
+}
+
+.auth-btn {
+  margin: 0 0.5rem;
+  width: 6rem;
+}
+
+.logo {
+  margin: 0; 
+  font-size: 3rem; 
+  font-family: "Kanit", sans-serif;
+}
+
+
+
+
+/******* Index Page *******/
+
+
+.index-input {
+  height: 5rem;
+}
+
+.center {
+  width: 50%;
+  padding: 1.8rem;
+  position: relative;
+  background-color: #f5f5f5;
+  float: left; /* Ensures the form stays on the left side */
+}
+
+.heading-label {
+  background-color: #000000 !important;
+  color: #f7f7f7;
+}
+
+.button {
+  margin: 1.5rem auto 0;
+  display: block;
+}
+
+.bt {
+  padding: 1.5rem 0 0 0;
+}
+
+/* Additional CSS for the right section */
+.right-section {
+  width: 50%;
+  padding: 1.8rem;
+  background-color: #f9f9f9; /* Light background for contrast */
+  float: right; /* Ensures the rules section stays on the right side */
+  border-left: 1px solid #ccc; /* Optional: Adds a border to separate the sections */
+}
+
+.right-section h4 {
+  margin-top: 0;
+}
+
+.right-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.gbs{
+  color: #31cfd7;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #31cfd7;
+}
+.gbs:hover{
+  background-color:#31cfd7 ;
+  color: white;
+}
+.right-section img {
+  max-width: 100%; /* Ensures the image does not overflow */
+  height: auto;    /* Maintains aspect ratio */
+  display: block;  /* Ensures the image is block-level and has margin settings */
+  margin-top: 20px; /* Adds some space between the list and the image */
+}
+
+
+
+
+/******* Search Page *******/
+
+
+.above-search {
+  margin: 8rem 0 0 5rem;
+  display: inline-flex;
+}
+
+.above-search .progress {
+  margin-top: 0.6rem;
+  margin-left: 23rem;
+}
+
+.left-card {
+  margin: 0 3rem;
+  width: 80%;
+  height: 60%;
+  padding: 1.8rem;
+  position: fixed;
+  top: 12rem;
+  border-radius: 25px;  
+}
+
+.right-card {
+  margin: 0 5rem;
+  width: 80%;
+  padding: 1rem;
+  position: relative;
+  top: 1rem;
+  border-radius: 25px;  
+}
+
+
+
+
+/******* Review Page *******/
+
+
+.review-card {
+  margin: 0 3rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+
+
+
+/**** Review & Traveller Page ****/
+
+
+.above-fare {
+  margin: 8rem 0 0 11rem;
+}
+
+.fare-card {
+  margin: 0 0 0 4rem;
+  width: 80%;
+  padding: 0rem;
+  border-radius: 10px; 
+}
+
+.rnt-btn {
+  width: 15rem; 
+  height: 3rem; 
+  line-height: 2rem;
+}
+
+
+
+
+/******* Traveller Page *******/
+
+
+.traveller-card {
+  margin: 0 2rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.traveller-details {
+  margin-bottom: 1rem; 
+  border: 1.5px solid;
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.traveller-details hr{
+  border-top: 1.5px dashed; 
+  background-color: #fff;
+}
+
+.traveller-details input[type="text"] {
+  background-color: #fff; 
+  border: 1.5px solid #808588;
+}
+
+.contact-details {
+  margin: 5rem 0 3rem;
+  background-color: #fff;
+}
+
+.contact-details input {
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1.5px solid #e3e3e3;
+}
+
+.contact-details input[type="number"]::-webkit-outer-spin-button,
+.contact-details input[type="number"]::-webkit-inner-spin-button {   
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+
+
+
+/******* Bookings Page *******/
+
+
+.big-list-card {
+  margin: 0 auto;
+  width: 95%;
+  padding: 3rem;
+  background-color: #cccccc !important;
+  border-radius: 20px; 
+  min-height: 70rem;
+  border: none !important;
+} 
+
+.list-card {
+  margin: 0 auto;
+  width: 85%;
+  padding: 2rem;
+  top: 10rem;
+  transform: translateY(-50%);
+  border-radius: 20px; 
+}
+
+.no-bookings {
+  color: #ce1212;
+  text-align: center;
+}
+
+.no-bookings hr {
+  border-top: 3px dashed #be0000; 
+  background-color: #fff;
+}
+
+
+
+
+/******* Boarding Pass & Cancel Page *******/
+
+
+.details-card {
+  margin: 1rem auto 0;
+  width: 70%;
+  padding: 2rem;
+  border-radius: 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.details-card button {
+  width: 15rem; 
+  height: 3rem;
+}
+
+.password-input {
+  text-align: center; 
+  background-color: #ff8585; 
+  border: none;
+}
+
+
+
+
+/******* FOOTER *******/
+
+
+footer {
+  background-color: navy;
+  color: #fff;
+  padding: 5px;
+}
+
+
+
+.socials {
+  display: flex;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.socials li {
+  margin: 0 15px;
+}
+
+.socials a i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.socials a:hover i {
+  color: #ff8585;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-align:end;
+}
+
+.nav-link:hover {
+  color: #ff8585;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.nav-item{
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/********** SMALL SCREEN QUERIES **********/
+
+
+@media only screen and (max-width: 600px) {
+    
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  .progress {
+    display: none;
+  }
+
+
+  /******* Navbar *******/
+
+  .nav-ul i { 
+    text-align: left;
+  }
+
+  .nav-ul {
+    margin-bottom: 1.5rem;
+  }
+
+  .d-flex .btn-dark {
+    display: none;
+  }
+
+
+  /******* Index Page *******/
+
+  .center {
+    width: 99%;
+  }
+
+  .center .input-group {
+    display: inline-block;
+    align-items: center;
+  }
+
+  .center .form-control {
+    width: 100%;
+  }
+
+
+  /******* Search Page *******/
+
+  .left-card {
+    display: none;
+  }
+
+  .right-card {
+    top: 3rem;
+    margin: auto;
+  }
+
+
+  /******* Review Page *******/
+
+  .review-card {
+    margin: 0 2.5rem;
+    width: 85%;
+    padding: 1rem;
+    text-align: left !important;
+  }
+  
+
+  /**** Review & Traveller Page ****/
+
+  .fare-card {
+    top: 13rem;
+    left: 20%;
+    margin: 0 auto;
+    width: 170%;
+  }
+
+
+  /******* Traveller Page *******/
+
+  .traveller-card {
+    margin: 0;
+  }
+
+  .traveller-card input {
+    margin-top: 1rem;
+    width: 100% !important;
+    border-radius: 0px;
+  }
+  
+
+  /******* Bookings Page *******/
+
+  .list-card {
+    margin-right: 20rem;
+    width: 110%;
+    padding: 0.5rem;
+    top: 15rem;
+  }
+
+  .list-card a {
+    margin-bottom: 1rem;
+  }
+
+  
+  /******* Boarding Pass & Cancel Page *******/
+
+  .mq::after { 
+    content: "\a";
+    white-space: pre;
+    display: block;
+  }
+
+  .details-card {
+    width: 95%;
+  }
+
+  .details-card button {
+    width: 100%; 
+    height: 4rem;
+  }
+
+}

@@ -1,0 +1,87 @@
+<% layout("layouts/boilerplate") %>
+
+<% 	
+	let date = new Date();
+	date.setDate(date.getDate() + 1); 
+	date = date.toLocaleDateString("en-GB", {month: "2-digit",day: "2-digit",year: "numeric"}).split("/").join(".") 
+%>
+
+<div style="display: flex; justify-content: space-between; width: 100%;">
+    <!-- Left Half: Form -->
+    <div class="center">
+        <form action="/" method="post">	
+            <div>
+                <h3> <b>Please Enter your flight details</b></h3>	
+                <div class="input-group input-group-lg">
+                    <label for="from" class="form-control heading-label">FROM</label>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input list="airports" type="text" aria-label="from" class="form-control index-input" value="GAU" name="from" autocomplete="false" required>
+                    <datalist id="airports">
+                        <% for (let airport of airports) { %>
+                            <option value="<%= airport.IATA_code %>"><%= airport.city_name %></option>
+                        <% } %>
+                    </datalist>
+                </div>
+                <div class="input-group input-group-lg">
+                    <label for="to" class="form-control heading-label">TO</label>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input list="airports" type="text" aria-label="to" class="form-control index-input" value="HYD" name="to" autocomplete="false" required>
+                    <datalist id="airports">
+                        <% for (let airport of airports) { %>
+                            <option value="<%= airport.IATA_code %>"><%= airport.city_name %></option>
+                        <% } %>
+                    </datalist>
+                </div>
+                <div class="input-group input-group-lg">
+                    <label for="date" class="form-control heading-label">DEPARTURE</label>
+                    <label for="passengerCount" class="form-control heading-label">TRAVELLERS</label>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="text" id="datepicker" aria-label="date" class="form-control index-input" name="date" value="<%= date %>" autocomplete="false" required>
+                    <select class="form-control" name="passengerCount" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="bt">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="group" id="group1" autocomplete="off" value="Economy" checked>
+                        <label class="btn btn-outline-secondary" for="group1">Economy</label>
+                        <input type="radio" class="btn-check" name="group" id="group2" autocomplete="off" value="Premium">
+                        <label class="btn btn-outline-secondary" for="group2">Premium</label>
+                        <input type="radio" class="btn-check" name="group" id="group3" autocomplete="off" value="Business">
+                        <label class="btn btn-outline-secondary" for="group3">Business</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-lg button">SEARCH</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Right Half: Rules and Links -->
+    <div class="right-section">
+        <div>
+            <h4>Check Your Bookings</h4>
+            <a href="/bookings" class="gbs">Go to Bookings</a>
+        </div>
+		<img src="/images/shreeplane.jpg" alt="Plane Image">
+        <div style="margin-top: 20px;">
+            <h4>Rules and Services</h4>
+            <ul>
+                <li>Please ensure all details are correct before submission.</li>
+                <li>We provide a safe journey with verified airlines.</li>
+                <li>Check your details twice to avoid mistakes.</li>
+                <li>You can book a maximum of 6 seats per booking.</li>
+				<li>You can book any type of class('Buisness','Economy','Premium') you want.</li>
+            </ul>
+        </div>
+		
+    </div>
+</div>
+<script src="/scripts/datePicker.js"></script>

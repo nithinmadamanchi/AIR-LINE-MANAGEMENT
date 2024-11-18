@@ -23,7 +23,7 @@ Follow these steps to set up Shree on your local machine:
    Clone the repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/nithinmadamanchi/Airline-management-system.git
+   git clone https://github.com/nithinmadamanchi/AIR-LINE-MANAGEMENT.git
    ```
 
 2. **Install Dependencies**
